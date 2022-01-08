@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "sutras",
   "info": {
-    "singularName": "event",
-    "pluralName": "events",
-    "displayName": "event",
+    "singularName": "sutra",
+    "pluralName": "sutras",
+    "displayName": "sutra",
     "description": ""
   },
   "options": {
@@ -14,6 +14,19 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "time": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "richtext"
     },
     "image": {
       "type": "media",
